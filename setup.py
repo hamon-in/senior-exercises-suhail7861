@@ -1,16 +1,15 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
-    name='image_crawler',
+    name='statistics',
     version='0.1',
-    packages=find_packages(),
+    py_modules=['statistics'],
     install_requires=[
-        'requests',
-        'beautifulsoup4',
+        'argparse',
     ],
     entry_points={
         'console_scripts': [
-            'image_crawler = your_script_name:main',
+            'statistics = statistics:main',
         ],
     },
 )
